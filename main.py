@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from contextlib import asynccontextmanager
 
 from app.core.config import settings
-from app.api.endpoints.api import api_router
+from app.api.api_v1.api import api_router
 
 @asynccontextmanager
 async def app_init(app: FastAPI):
